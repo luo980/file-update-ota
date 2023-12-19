@@ -1,4 +1,8 @@
 ./.history
 ./.vscode
 ./build
-./.history
+./.history/*
+./build/*
+build
+.history
+.vscode
