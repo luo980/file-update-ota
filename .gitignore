@@ -6,3 +6,7 @@
 build
 .history
 .vscode
+src/.history
+src/.vscode
+src/bin/camera/build
+src/uploader/uploader
