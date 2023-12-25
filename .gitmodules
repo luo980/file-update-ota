@@ -1,0 +1,3 @@
+[submodule "src/bin/camera"]
+	path = src/bin/camera
+	url = https://github.com/luo980/ota_demo
