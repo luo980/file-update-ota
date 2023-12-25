@@ -1,0 +1,5 @@
+files:
+  - name: camera_ability
+    local_path: /home/luo980/mygits/file-update-ota/local/
+    server_url: http://localhost:1323/ability_unit/
+    local_version: 3.0.0-alpha
