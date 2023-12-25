@@ -14,6 +14,10 @@
 
 demo部分主要通过CMake结合git实现版本号控制，通过读取git branch来编译出指定版本的二进制程序
 
+格式定义为major.minor.patch-preRelease，通过CMake编译时会将git branch版本并入二进制名称中
+
+如 3.0.0-alpha, major一般为大版本功能性更新，minor为一般feature更新，patch为bug修订版本，preRelease为预发布版本代号，非正式版提前试用测试型
+
 ## uploader部分
 
 uploader为HTTP Fileserver的简单上传后端，通过标准PUT语义基于form-data格式body实现文件上传，使用方式为：uploader <URL> <FilePath>，URL为服务器路径，FilePath为本地文件路径
@@ -87,7 +91,7 @@ files:
     local_version: 3.0.0-alpha
 ```
 其中：
-* name：二进制名称，不附带版本号
+* name：二进制名称，不附带版本号，注意小于15个字符，有搜索限制
 * local_path: 本地绝对路径
 * server_url: 目标服务器文件夹路径
 * local_version: 本地二进制版本（如本地无文件则无效）
